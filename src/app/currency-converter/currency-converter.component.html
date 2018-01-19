@@ -7,7 +7,6 @@
       <select class="slds-select" [(ngModel)]="convertFrom" (ngModelChange)="fxExchange($event)">
         <option *ngFor="let opt of availCurrency;  let i=index;" [value]="opt">{{opt}}</option>
       </select>
-      <p>{{convertFrom}}</p>
     <p>Converted Amount:</p>
     <input type="number" id="ConvertToInput" class="slds-input" [(ngModel)]="convertToInput" readonly/>
     <select class="slds-select" [(ngModel)]="convertTo" (ngModelChange)="fxExchange($event)">
