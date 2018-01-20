@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { window } from 'rxjs/operator/window';
 
 @Component({
   selector: 'app-currency-converter',
@@ -54,4 +55,8 @@ export class CurrencyConverterComponent {
     this.convertToInput = (this.curr * this.convertFromInput).toFixed(2);
     console.log(this.convertToInput);
   }
+
+  myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
 }

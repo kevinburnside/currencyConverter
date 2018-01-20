@@ -1,5 +1,5 @@
     <h1>
-      Currency Covnerter
+      Currency Converter
     </h1>
     <div class="slds-select_container"></div>
     <p>Type in amount and select currency:</p>
@@ -12,3 +12,6 @@
     <select class="slds-select" [(ngModel)]="convertTo" (ngModelChange)="fxExchange($event)">
       <option *ngFor="let opt of availCurrency" [value]="opt">{{opt}}</option>
     </select>
+    <div>
+<a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">Disclaimer</a>
+</div>
